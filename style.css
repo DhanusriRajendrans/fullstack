@@ -1,0 +1,62 @@
+/* Background with gradient animation */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#app {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #6a11cb;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Typing effect container */
+.typing {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444;
+  min-height: 40px;
+  margin-top: 10px;
+  white-space: pre;
+  overflow: hidden;
+}
